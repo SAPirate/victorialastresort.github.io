@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vic fall booking form</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo2">
+            <div class="nam-link">
+                <a href="index.html">home</a>
+                <a href="about.html">about</a>
+                <a href="packages.html">packages</a>
+                <a href="activities.html">activities</a>
+                <a href="booking.html">booking</a>
+                <a href="contact.html">contact</a>
+                
+            </div>
+        </div> 
+
+        <!--  -->
+
+        <div class="header">
+            <h1>make your reservation below</h1>
+            
+        </div>
+      
+        <!-- phase 2 -->
+      
+        <div class="phase-two-container">
+            <div class="phrase-two-table"> 
+            <table style="margin:1% 0%;width: 100%;">
+                <form  action="https://formsubmit.co/eshtraveltours35@gmail.com" method="POST">
+                    <tr>
+                       <td>
+                        <input type="text" name="names" id="names" placeholder="enter full names" required>
+                        <input type="text" name="contact" id="contact" placeholder=" one emergency contact number" required>
+                       </td>
+                        <td>
+                           <input type="email" name="email" id="email" placeholder="enter email of correspondance" required>
+                           <input type="text" name="days" id="days" placeholder="number of days" required>
+                        </td>
+                    </tr>
+                    <tr>
+                
+                          <td>
+                              <select class="form-select">
+                                <option selected>Select your travel package price</option>
+                                    <option value="1" name="individual" id="individual" aria-required="true">Individual travel package</option> 
+                              </select>
+
+                              <div class="quantity">
+                                <button class="btn minus" type="button" onclick="decrement_two()"> -</button>
+                                <input type="text" name="individual_price" placeholder="R" value="0" id="qtyInput_two" required>
+                                <button class="btn minus" type="button"  onclick="increment_two()"> +</button>
+                              </div>
+                              
+                              <!--  -->
+                              <select class="form-select">
+                                <option selected>Select your travel package price</option>
+                                    <option value="2" name="couple" id="couple" aria-required="true">couple travel package</option>
+                              </select>
+                              <div class="quantity">
+                                <button class="btn minus" type="button" onclick="decrement_three()"> -</button>
+                                <input type="text" name="couple_price" value="0" id="qtyInput_three" required>
+                                <button class="btn minus" type="button"  onclick="increment_three()"> +</button>
+                                <div class="group">
+                                   <p>group package are ordered at 
+                                    <br>
+                                    <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=shcapital18@gmail.com&tf=1">eshtraveltours35@gmail.com</a></p>
+                                </div>
+                              </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            
+                            <td>
+                                <br>
+                                <select class="form-select" name="theSelect" id="theSelect">
+                                    <option selected>Do you want to include more activities to your package</option>
+                                        <option value="show" name="activities_yes" id="activities_yes" aria-required="true">yes</option> 
+                                       <option value="hide" name="activities_no" id="activities_no" aria-required="true">no</option>
+                                  </select>
+                            
+                                <div class="multiselect" id="multiselect">
+                                    <div class="selectBox" id="multiselect">
+                                        <select name="" id="">
+                                            <option value="">select an option</option>
+                                        </select>
+                                        <div class="overSelect"></div>
+                                    </div>
+
+                                    <div id="multiselect" class="checkbox">
+                                        <div class="label">
+                                        <label for="one"><input type="checkbox" id="helicopter" name="helicopter"><p>helicopter ride <span style="color: #444;">with addition  : R2800 per person / $150 Per person to your travel price</span></p></label>
+                                        </div>
+                                        <div class="label">
+                                        <label for="two"><input type="checkbox" id="river_raft"  name="river_raft"><p>river raft <span style="color: #444;">with addition  : R2500 per person / $132 per person to your travel price</span></p></label>
+                                        </div>
+                                        <div class="label">
+                                        <label for="three"><input type="checkbox" id="devil_pool" name="devil_pool"><p>devil pool <span style="color: #444;">with addition  : R3000 per person / $160 per person to your travel price</span></p></label>
+                                        </div>
+                                        <div class="label">
+                                        <label for="four"><input type="checkbox" id="elephant_ride" name="elephant_ride"><p>elephant ride <span style="color: #444;">with addition  : R2800 per person / $150 per person to your travel price</span></p></label>
+                                        </div>
+                                        <div class="label">
+                                        <label for="five"><input type="checkbox" id="lion_walk" name="lion_walk"><p>lion walk <span style="color: #444;">with addition  : R2800 per person / $150 per person to your travel price</span></p></label>
+                                        </div>
+                                        <div class="label">
+                                            <label for="seven"><input type="checkbox" id="civ_falls" name="civ_falls"><p>vic falls <span style="color: #444;">with addition  :  R570 per person / $30 per person to tour travel price</span></p></label>
+                                            </div>
+                                    </div>
+                                </div>
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                        <td style="width: 60%;">
+                            <div class="button-form1" style="padding: 10px;">
+                                <button type="submit" value="submit" class="submit-btn" >submit registration <i class="fa fa-location-arrow"></i></button>
+                            </div>
+                        </td>
+                     </tr>
+                </form>
+            </table>
+             </div>
+            </div>
+
+          
+        </div>
+    </div>
+ <script src="booking.js"></script> 
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
